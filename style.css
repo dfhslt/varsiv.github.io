@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    min-width: 400 px;
+    max-width: 44100 px;
+}
+
+.body{
+    font-family: Arial, sans-serif;
+    background-color:#f4f4f4;
+    
+}
+
+.header{
+    background:#333;
+    color:#fff;
+    padding: 30 px;
+    text-align: center;
+    
+}
+.filters{
+    margin:10 px 0;
+}
+
+.job-list{
+    width: 90%;
+    max-width:1200 px;
+    margin: 20 px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30 px;
+    
+}
+
+.job-item{
+    display: flex;
+    border: 1 px solid rgb(161, 185, 161);
+    border-radius: 5 px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(203, 224, 203);
+    min-height: 100 px;
+    margin: 50 px;
+    padding: 20 px;
+    transition: transform 0.2s;
+}
+
+.job-item:hover {
+    transform: scale(1.05);
+}
+
+.btn{
+    margin:20 px 0;
+    padding: 10 px 20 px;
+    background:#173610;
+    color: white;
+    border: none;
+    border-radius: 5 px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer{
+    text-align: center;
+    padding: 20 px;
+    background: #131313;
+    color: white;
+}
+@media (max-width: 700){
+    .title{
+        font-size: 36 px;
+    }
+    .job-list{
+       grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 400){
+    .job-list{
+        grid-template-columns: repeat(1fr);
+    }
+}
+/* Или с помощью width: 80% или 50vw */
