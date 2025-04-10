@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="rus">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale = 1.0, minimum-scale=1.0">
+        <meta name="viewport"
+    content="width=device-width, initial-scale = 1.0">
+        <link href="styles.css" rel="stylesheet">
+        <title>Список вакансий</title>
+    </head>
+    <body>
+        <header>
+            <h1 class="title">Вакансии</h1>
+            <div id="filters">
+                <!--Выпадающий список для выбора типа работ-->
+                <label for='job-type'>Тип работы:</label>
+                <select id="job-type">
+                    <option value1="">Все</option> <!--Возможность выбрать все вакансии-->
+                    <option value2="full-time">Полная занятость</option>
+                    <option value3="part-time">Частичная занятость</option>
+                </select>
+                <button id="clear-filters">Очистить фильтры</button> <!--Кнопка для очистки всех фильтров-->
+            </div>
+        </header>
+        <main>
+            <section class="job" id="job-list">
+               <ul class="job-list">
+                   <li class="job-item">Вакансия</li>
+                   <li class="job-item">Вакансия</li>
+                   <li class="job-item">Вакансия</li>
+                   <li class="job-item">Вакансия</li>
+            </section> <!--Здесь будут загружены вакансии-->
+            <button id="show-more" class="btn">Показать ещё</button>      
+        </main>
+        <footer>
+            <p>Сайт</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
